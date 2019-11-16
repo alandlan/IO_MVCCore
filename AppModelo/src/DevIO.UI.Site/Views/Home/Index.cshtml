@@ -1,2 +1,8 @@
-﻿
-Olá
+﻿@using static DevIO.UI.Site.Data.PedidoRepository
+@inject IPedidoRepository PedidoRepository
+
+Olá!
+    <br />
+@PedidoRepository.ObterPedido().Id
+
+

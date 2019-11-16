@@ -3,14 +3,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static DevIO.UI.Site.Data.PedidoRepository;
 
 namespace DevIO.UI.Site.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        //private readonly IPedidoRepository _pedidoRepository;
+        //public HomeController(IPedidoRepository pedidoRepository)
+        //{
+        //    _pedidoRepository = pedidoRepository;
+        //}
+        public IActionResult Index([FromServices] IPedidoRepository _pedidoRepository)
         {
-            return View();
+            var pedido = _pedidoRepository.ObterPedido();
+
+            return View(pedido);
         }
     }
 }
