@@ -1,2 +1,2 @@
 # IO_MVCCore
-Projeto em MVC Core do curso Desenvolvedor IO
+Projeto em MVC Core C#
