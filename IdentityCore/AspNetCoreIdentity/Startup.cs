@@ -1,7 +1,5 @@
 ﻿using AspNetCoreIdentity.Config;
 using AspNetCoreIdentity.Extensions;
-using KissLog;
-using KissLog.Apis.v1.Listeners;
 using KissLog.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
